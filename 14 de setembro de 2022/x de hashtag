@@ -1,0 +1,9 @@
+# Dado um inteiro n retorne um 
+# quadrado de lado n formado 
+# por '#' com um X no meio, 
+# composto por caracteres 'x'.
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        print('x' if ((i==j) or (i+j==n-1)) else '#', end='')
+    print()
